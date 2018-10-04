@@ -1,0 +1,40 @@
+{
+  "consumer": {
+    "name": "Cardclient"
+  },
+  "provider": {
+    "name": "Cardservice"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve a card",
+      "providerState": "Card with id '0d906a20abf1428a1d30a694f3cc1cec1692652d' exists",
+      "request": {
+        "method": "get",
+        "path": "/api/cards/0d906a20abf1428a1d30a694f3cc1cec1692652d",
+        "headers": {
+          "Accept": "application/json",
+          "RequestId": "145d5d8b-2056-4dab-8786-a0f9979c6a32"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "card": {
+            "id": 12636,
+            "name": "Glorybringer",
+            "scryfallImageUrl": "https://img.scryfall.com/cards/large/en/akh/134.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
